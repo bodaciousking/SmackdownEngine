@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  stdafx.cpp
-  main.cpp
-  SmackdownEngine.vcxproj -> C:\Users\100981018\Documents\GitHub\SmackdownEngine\\Game\x64\Debug\SmackdownEnginex64Debug.exe
-=======
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(444,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(445,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  stdafx.cpp
+  BaseComponent.cpp
+  GameObject.cpp
+  Initializer.cpp
   main.cpp
+  RigidBody.cpp
+  SceneGraph.cpp
+  TransformComponent.cpp
+  vec2.cpp
+  Generating Code...
+  LINK : C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\\Game\x64\Debug\SmackdownEnginex64Debug.exe not found or not built by the last incremental link; performing full link
   SmackdownEngine.vcxproj -> C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\\Game\x64\Debug\SmackdownEnginex64Debug.exe
->>>>>>> Stashed changes
-=======
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(444,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(445,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  SmackdownEngine.vcxproj -> C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\\Game\x64\Debug\SmackdownEnginex64Debug.exe
->>>>>>> N_Branch

@@ -23,7 +23,7 @@
     <ProjectGuid>{ACD1369B-F105-460A-B8F6-29474CD14B9A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SmackdownEngine</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -159,19 +159,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BaseComponent.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Initializer.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="RigidBody.h" />
+    <ClInclude Include="SceneGraph.h" />
     <ClInclude Include="SmackdownEngine.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TransformComponent.h" />
+    <ClInclude Include="vec2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaseComponent.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Initializer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RigidBody.cpp" />
+    <ClCompile Include="SceneGraph.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TransformComponent.cpp" />
+    <ClCompile Include="vec2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SmackdownEngine.rc" />

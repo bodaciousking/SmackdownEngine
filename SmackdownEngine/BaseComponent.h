@@ -1,8 +1,11 @@
 #pragma once
+
+#include "SFML/System/Clock.hpp"
+
 class BaseComponent
 {
 public:
-	BaseComponent();
-	~BaseComponent();
+	virtual void Start(){}
+	virtual void Update(){}
 };
 

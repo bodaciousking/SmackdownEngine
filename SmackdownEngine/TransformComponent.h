@@ -1,13 +1,19 @@
 #pragma once
-#include "vec2.h"
-#include "BaseComponent.h"
-class TransformComponent : public BaseComponent
+
+#include "SFML/Graphics/Transform.hpp"
+#include "BaseComponent.cpp"
+#include "Vector2.h"
+
+class TransformComponent : BaseComponent
 {
 public:
-	vec2 position;
-	vec2 scale;
+	TransformComponent() : v_Position(), v_Rotation(), v_Scale(1.0f, 1.0f) {}
 
-	TransformComponent();
-	~TransformComponent();
+	void Start();
+	void Update();
+
+	sf::Transform transformMatrix;
+	Vector2 v_Position;
+	Vector2 v_Rotation;
+	Vector2 v_Scale;
 };
-

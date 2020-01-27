@@ -1,12 +1,12 @@
-#include "stdafx.h"
 #include "TransformComponent.h"
+#include <iostream>
 
-
-TransformComponent::TransformComponent()
+void TransformComponent::Start()
 {
+	std::cout << "Transformer Initialized bzzt brrt" << std::endl;
 }
 
-
-TransformComponent::~TransformComponent()
+void TransformComponent::Update()
 {
+	//std::cout << "Pos (x: " << v_Position.x << ", y: " << std::endl;
 }

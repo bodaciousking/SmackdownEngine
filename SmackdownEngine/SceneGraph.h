@@ -1,22 +1,22 @@
 #pragma once
-#include <iostream>
 #include <list>
-#include <vector>
+#include <map>
+#include <iostream>
+
 #include "GameObject.h"
+
 
 class SceneGraph
 {
 public:
-	std::string sceneName;
+	GameObject* CreateObject(sf::Texture texture, bool isKinematic, Vector2 pos);
 
-	//std::list<GameObject> gOChain;
-	std::vector<GameObject> gameObjectChain;
+	void Start();
+	void Update(sf::Time deltaTime);
 
-	void UpdateAllGameObjects() {};
+	std::list<RenderComponent*> renderComponents;
 
-	SceneGraph(std::string _sceneName);
-
-
-	~SceneGraph();
+private:
+	std::map<int, GameObject*> v_Objects;
+	static int nextObjectID;
 };
-

@@ -1,13 +1,26 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(444,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(445,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  BaseComponent.cpp
-  GameObject.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   Initializer.cpp
+  Input.cpp
+  SmackdownEngine.cpp
+d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(39): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(40): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(43): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(80): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
+d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(72): warning C4101: 'sysInfo': unreferenced local variable
+  Update.cpp
   main.cpp
-  RigidBody.cpp
-  SceneGraph.cpp
-  TransformComponent.cpp
-  vec2.cpp
   Generating Code...
-  LINK : C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\\Game\x64\Debug\SmackdownEnginex64Debug.exe not found or not built by the last incremental link; performing full link
-  SmackdownEngine.vcxproj -> C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\\Game\x64\Debug\SmackdownEnginex64Debug.exe
+  SmackdownEngine.vcxproj -> D:\School Semester 5\Game Engine\SmackdownEngine\\Game\x64\Debug\SmackdownEnginex64Debug.exe

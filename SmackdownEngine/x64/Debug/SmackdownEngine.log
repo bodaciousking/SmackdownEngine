@@ -1,2 +1,30 @@
-﻿  main.cpp
-  SmackdownEngine.vcxproj -> C:\Users\100981018\Documents\GitHub\SmackdownEngine\x64\Debug\SmackdownEngine.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  BaseComponent.cpp
+  GameObject.cpp
+  Input.cpp
+  main.cpp
+  RenderComponent.cpp
+  SceneGraph.cpp
+  SmackdownEngine.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(39): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\thato\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(40): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\thato\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(43): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\thato\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(80): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
+c:\users\thato\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(72): warning C4101: 'sysInfo': unreferenced local variable
+  TransformComponent.cpp
+  Update.cpp
+  Generating Code...
+  SmackdownEngine.vcxproj -> C:\Users\ThatO\Documents\GitHub\SmackdownEngine\\Game\x64\Debug\SmackdownEngine.exe

@@ -1,26 +1,22 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  BaseComponent.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\basecomponent.h(3): fatal error C1083: Cannot open include file: 'SFML/System/Clock.hpp': No such file or directory
+  GameObject.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\gameobject.h(10): fatal error C1083: Cannot open include file: 'SFML/System/Clock.hpp': No such file or directory
   Initializer.cpp
   Input.cpp
-  SmackdownEngine.cpp
-d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(39): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(40): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(43): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
-          with
-          [
-              T=float
-          ]
-d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(80): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
-d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(72): warning C4101: 'sysInfo': unreferenced local variable
-  Update.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\smackdownengine.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
   main.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\smackdownengine.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  RenderComponent.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\rendercomponent.h(5): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  SceneGraph.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\gameobject.h(10): fatal error C1083: Cannot open include file: 'SFML/System/Clock.hpp': No such file or directory
+  SmackdownEngine.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\smackdownengine.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  TransformComponent.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\transformcomponent.h(3): fatal error C1083: Cannot open include file: 'SFML/Graphics/Transform.hpp': No such file or directory
+  Update.cpp
+c:\users\thato\documents\github\smackdownengine\smackdownengine\smackdownengine.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
   Generating Code...
-  SmackdownEngine.vcxproj -> D:\School Semester 5\Game Engine\SmackdownEngine\\Game\x64\Debug\SmackdownEnginex64Debug.exe

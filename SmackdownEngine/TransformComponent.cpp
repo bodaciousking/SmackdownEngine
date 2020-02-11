@@ -8,5 +8,5 @@ void TransformComponent::Start()
 
 void TransformComponent::Update()
 {
-	//std::cout << "Pos (x: " << v_Position.x << ", y: " << std::endl;
+	
 }

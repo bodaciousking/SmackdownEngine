@@ -1,42 +1,129 @@
 #include "SmackdownEngine.h"
+#include "Input.h"
 
-void SmackdownEngine::Input()
+bool Input::space()
 {
-
-	if (Keyboard::isKeyPressed(Keyboard::Escape))
-	{
-		v_Window.close();
-	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Space))
 	{
+		return true;
 	}
 
-	if (Keyboard::isKeyPressed(Keyboard::Left) || Keyboard::isKeyPressed(Keyboard::A))
+}
+
+bool Input::A()
+{
+	if (Keyboard::isKeyPressed(Keyboard::A))
 	{
+		return true;
 	}
 	else
 	{
+		return false;
 	}
+}
 
-	if (Keyboard::isKeyPressed(Keyboard::Right) || Keyboard::isKeyPressed(Keyboard::D))
+bool Input::D()
+{
+	if (Keyboard::isKeyPressed(Keyboard::D))
 	{
+		return true;
 	}
 	else
 	{
+		return false;
 	}
+}
 
-	if (Keyboard::isKeyPressed(Keyboard::Up) || Keyboard::isKeyPressed(Keyboard::W))
+bool Input::W()
+{
+	if (Keyboard::isKeyPressed(Keyboard::W))
 	{
-	}
-	else
-	{	
-	}
-
-	if (Keyboard::isKeyPressed(Keyboard::Down) || Keyboard::isKeyPressed(Keyboard::S))
-	{
+		return true;
 	}
 	else
 	{
+		return false;
+	}
+}
+
+bool Input::S()
+{
+	if (Keyboard::isKeyPressed(Keyboard::S))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool Input::left()
+{
+	if (Keyboard::isKeyPressed(Keyboard::Left))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+
+
+bool Input::right()
+{
+
+	if (Keyboard::isKeyPressed(Keyboard::Right))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+
+
+bool Input::up()
+{
+	if (Keyboard::isKeyPressed(Keyboard::Up))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool Input::down()
+{
+	if (Keyboard::isKeyPressed(Keyboard::Down))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool Input::enter()
+{
+	if (Keyboard::isKeyPressed(Keyboard::Enter))
+	{
+		return true;
+	}
+}
+
+bool Input::esc()
+{
+	if (Keyboard::isKeyPressed(Keyboard::Escape))
+	{
+		return true;
 	}
 }

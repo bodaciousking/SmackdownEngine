@@ -1,6 +1,7 @@
 #pragma region INCLUDES
 #include "SmackdownEngine.h"
 #include "SceneManager.h"
+#include "Input.h"
 #include <windows.h>
 #include <winnt.h>
 #include <iostream>
@@ -32,6 +33,7 @@ typedef struct _PROCESSOR_POWER_INFORMATION
 Vector2f resolution;
 //float splashTimer = 30.0f;
 
+Input input;
 
 SmackdownEngine::SmackdownEngine()
 {
@@ -56,7 +58,9 @@ void SmackdownEngine::Start()
 	while (v_Window.isOpen())
 	{
 		v_Window.clear(Color::Black);
-		Input();
+		if(input.esc())
+			v_Window.close();
+
 		if (GAME_STATE == SPLASH)
 		{
 			v_Window.draw(v_SplashSprite);

@@ -13,7 +13,7 @@ private:
 	Texture v_SplashTexture;
 	Text v_SplashText;
 	Font font;
-	void Input();
+	//void Input();
 	void Update(float dtAsSeconds);
 	void Draw();
 	float p1Score, p2Score;

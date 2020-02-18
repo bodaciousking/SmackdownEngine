@@ -21,6 +21,6 @@ C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\SmackdownEngine\Smackdo
           [
               T=float
           ]
-C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\SmackdownEngine\SmackdownEngine.cpp(140,25): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
-C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\SmackdownEngine\SmackdownEngine.cpp(132,14): warning C4101: 'sysInfo': unreferenced local variable
+C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\SmackdownEngine\SmackdownEngine.cpp(132,25): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
+C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\SmackdownEngine\SmackdownEngine.cpp(124,14): warning C4101: 'sysInfo': unreferenced local variable
   SmackdownEngine.vcxproj -> C:\Users\Neo-P\OneDrive\Documents\GitHub\SmackdownEngine\\Game\x64\Debug\SmackdownEngine.exe

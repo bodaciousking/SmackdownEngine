@@ -33,7 +33,7 @@ typedef struct _PROCESSOR_POWER_INFORMATION
 Vector2f resolution;
 //float splashTimer = 30.0f;
 
-Input input;
+//Input input;
 
 SmackdownEngine::SmackdownEngine()
 {
@@ -64,12 +64,12 @@ SmackdownEngine::SmackdownEngine()
 
 void SmackdownEngine::Start()
 {
-	while (v_Window.isOpen())
-	{
+	//while (v_Window.isOpen())
+	//{
 
 		v_Window.clear(Color::Black);
-		if(input.esc())
-			v_Window.close();
+		//if(input.esc())
+			//v_Window.close();
 
 		switch (GAME_STATE)
 		{
@@ -115,7 +115,7 @@ void SmackdownEngine::Start()
 		}
 
 		v_Window.display();
-	}
+	//}
 }
 
 void SmackdownEngine::CheckSystemReqs()

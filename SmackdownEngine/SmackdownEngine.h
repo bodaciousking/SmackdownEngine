@@ -3,12 +3,13 @@
 #include <SFML/Audio.hpp>
 #include "SceneManager.h"
 #include "resource.h"
+#include "Input.h"
 
 using namespace sf;
 
 class SmackdownEngine {
 private:
-	RenderWindow v_Window;
+	
 	Sprite v_SplashSprite;
 	Sprite v_MenuSprite;
 	Sprite v_GameSprite;
@@ -30,5 +31,7 @@ public:
 	SmackdownEngine();
 	void CheckSystemReqs();
 	void Start();
+	Input input;
+	RenderWindow v_Window;
 
 };

@@ -2,7 +2,7 @@
 
 int SceneGraph::nextObjectID = 0;
 
-GameObject* SceneGraph::CreateObject(sf::Texture texture, bool isKinematic, Vector2 pos)
+GameObject* SceneGraph::CreateObject(sf::Texture texture, bool isKinematic, sf::Vector2f pos)
 {
 	std::cout << "SceneGraph is creating a gameobject." << std::endl;
 
@@ -22,6 +22,7 @@ void SceneGraph::Start()
 	{
 		(i->second)->Start();
 	}
+	std::cout << "SceneGraph Initialized!" << std::endl;
 }
 
 void SceneGraph::Update(sf::Time deltatime)
@@ -30,4 +31,5 @@ void SceneGraph::Update(sf::Time deltatime)
 	{
 		(i->second)->Update(deltatime);
 	}
+	//std::cout << "SceneGraph Updated with dt "; std::cout << deltatime.asMilliseconds << std::endl;
 }

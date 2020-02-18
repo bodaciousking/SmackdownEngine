@@ -33,7 +33,7 @@ public:
 	int v_ID;
 
 	GameObject() {}
-	GameObject(int objID, sf::Texture texture, bool isKinematic, Vector2 pos) : v_ID(objID), v_Parent(NULL), v_Texture(texture)
+	GameObject(int objID, sf::Texture texture, bool isKinematic, sf::Vector2f pos) : v_ID(objID), v_Parent(NULL), v_Texture(texture)
 	{
 		v_Transform = new TransformComponent();
 		v_Transform-> v_Position = pos;

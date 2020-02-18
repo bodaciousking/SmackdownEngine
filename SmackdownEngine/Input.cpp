@@ -1,9 +1,9 @@
 #include "SmackdownEngine.h"
 #include "Input.h"
 
+using namespace sf;
 bool Input::space()
 {
-
 	if (Keyboard::isKeyPressed(Keyboard::Space))
 	{
 		return true;
@@ -75,7 +75,6 @@ bool Input::left()
 
 bool Input::right()
 {
-
 	if (Keyboard::isKeyPressed(Keyboard::Right))
 	{
 		return true;

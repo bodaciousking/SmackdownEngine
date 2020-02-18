@@ -1,7 +1,9 @@
 #pragma region INCLUDES
 #include "SmackdownEngine.h"
 #include "SceneManager.h"
+#include "SceneGraph.h"
 #include "Input.h"
+#include <SFML/System/Clock.hpp>
 #include <windows.h>
 #include <winnt.h>
 #include <iostream>
@@ -35,6 +37,8 @@ Vector2f resolution;
 
 //Input input;
 
+SceneGraph sceneGraph;
+
 SmackdownEngine::SmackdownEngine()
 {
 	//GET MONITOR RESOLUTION
@@ -60,13 +64,23 @@ SmackdownEngine::SmackdownEngine()
 
 	v_ResultsTexture.loadFromFile("../Assets/Results.jpg");
 	v_ResultsSprite.setTexture(v_ResultsTexture);
+
+	//EXAMPLE GAMEOBJECT
+	v_ExampleTexture.loadFromFile("../Assets/unnamed.png");
+
+	// sceneGraph.CreateObject(v_ExampleTexture, true, (resolution.x / 2, resolution.y / 2));
 }
 
 void SmackdownEngine::Start()
 {
+<<<<<<< HEAD
 	//while (v_Window.isOpen())
 	//{
 
+=======
+	while (v_Window.isOpen())
+	{
+>>>>>>> b3fcc6f85479ef8841c6646da4fd47350eb8e2f6
 		v_Window.clear(Color::Black);
 		//if(input.esc())
 			//v_Window.close();
@@ -82,25 +96,32 @@ void SmackdownEngine::Start()
 				GAME_STATE = MENU;
 			break;
 
-			//std::cout << "drawing";
-
 		case MENU:
 			scene = MENU;
 			v_Window.clear(Color::Black);
 			v_Window.draw(v_MenuSprite);
 			if (input.enter())
+			{
 				GAME_STATE = GAME;
+				SmackdownEngine::InitializeGame();
+				sceneGraph.Start();
+			}
 			break;
 			//std::cout << "drawing";
 
 		case GAME:
 			scene = GAME;
 			v_Window.clear(Color::Black);
-			v_Window.draw(v_GameSprite);
+			v_Window.draw(v_GameSprite);/*
+			if (v_Clock.getElapsedTime().asMilliseconds > 1000) {
+				v_Clock.restart();
+				sceneGraph.Update(v_Clock.getElapsedTime);
+			}*/
+
+
 			if (input.enter())
 				GAME_STATE = RESULTS;
 			break;
-			//std::cout << "drawing";
 
 		case RESULTS:
 			scene = RESULTS;
@@ -109,13 +130,17 @@ void SmackdownEngine::Start()
 			if (input.enter())
 				GAME_STATE = MENU;
 			break;
-			//std::cout << "drawing";
+
 		default:
 			break;
 		}
 
 		v_Window.display();
 	//}
+}
+
+void SmackdownEngine::InitializeGame() {
+	v_Clock.restart();
 }
 
 void SmackdownEngine::CheckSystemReqs()

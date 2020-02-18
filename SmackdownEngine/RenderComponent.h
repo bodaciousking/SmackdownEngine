@@ -15,8 +15,8 @@
 struct Bounds
 {
 public:
-	Vector2 center;
-	Vector2 extents;
+	sf::Vector2f center;
+	sf::Vector2f extents;
 };
 
 class RenderComponent : BaseComponent

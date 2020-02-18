@@ -23,6 +23,6 @@ void RenderComponent::SetBounds()
 
 	std::cout << "Rect: T(" << r.top << "), L(" << r.left << "), H(" << r.height << "), W(" << r.width << ")" << std::endl;
 
-	v_Bounds.center = Vector2(v_Sprite.getOrigin().x, v_Sprite.getOrigin().y);
-	v_Bounds.extents = Vector2(r.width * 0.5f, r.height * 0.5f);
+	v_Bounds.center = sf::Vector2f(v_Sprite.getOrigin().x, v_Sprite.getOrigin().y);
+	v_Bounds.extents = sf::Vector2f(r.width * 0.5f, r.height * 0.5f);
 }

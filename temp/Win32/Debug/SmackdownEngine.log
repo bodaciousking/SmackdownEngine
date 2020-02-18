@@ -1,1 +1,34 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Platform.targets(67,5): error MSB8020: The build tools for v142 (Platform Toolset = 'v142') cannot be found. To build using the v142 build tools, please install v142 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  BaseComponent.cpp
+  GameObject.cpp
+  Initializer.cpp
+  Input.cpp
+  main.cpp
+  RenderComponent.cpp
+  SceneGraph.cpp
+  SmackdownEngine.cpp
+c:\users\100981018\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(41): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\100981018\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(42): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\100981018\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(45): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\100981018\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(132): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
+c:\users\100981018\documents\github\smackdownengine\smackdownengine\smackdownengine.cpp(124): warning C4101: 'sysInfo': unreferenced local variable
+  SceneManager.cpp
+  TransformComponent.cpp
+  Update.cpp
+  Generating Code...
+c:\users\100981018\documents\github\smackdownengine\smackdownengine\input.cpp(12): warning C4715: 'Input::space': not all control paths return a value
+c:\users\100981018\documents\github\smackdownengine\smackdownengine\input.cpp(140): warning C4715: 'Input::esc': not all control paths return a value
+sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'

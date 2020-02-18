@@ -13,7 +13,7 @@ public:
 	void Update();
 
 	sf::Transform transformMatrix;
-	Vector2 v_Position;
-	Vector2 v_Rotation;
-	Vector2 v_Scale;
+	sf::Vector2f v_Position;
+	sf::Vector2f v_Rotation;
+	sf::Vector2f v_Scale;
 };

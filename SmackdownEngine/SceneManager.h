@@ -9,3 +9,6 @@ enum SCENE
 	RESULTS
 
 };
+
+void changeScene(SCENE scene);
+

@@ -14,4 +14,9 @@ public:
 	bool esc();
 	bool enter();
 	bool space();
+
+private:
+	bool enterKeyPressed = false;
+	bool enterKeyReleased = true;
 };
+

@@ -116,7 +116,18 @@ bool Input::enter()
 {
 	if (Keyboard::isKeyPressed(Keyboard::Enter))
 	{
-		return true;
+		if (enterKeyPressed == false)
+		{
+			enterKeyPressed = true;
+			return true;
+		}
+		else
+			return false;
+	}
+
+	else {
+		enterKeyPressed = false;
+		return false;
 	}
 }
 

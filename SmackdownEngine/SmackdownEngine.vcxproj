@@ -199,6 +199,7 @@
     <ClCompile Include="RenderComponent.cpp" />
     <ClCompile Include="SceneGraph.cpp" />
     <ClCompile Include="SmackdownEngine.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="TransformComponent.cpp" />
     <ClCompile Include="Update.cpp" />
   </ItemGroup>

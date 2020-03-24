@@ -1,4 +1,4 @@
-#pragma region INCLUDES
+#pragma
 #include "SmackdownEngine.h"
 #include "SceneManager.h"
 #include "SceneGraph.h"
@@ -73,17 +73,11 @@ SmackdownEngine::SmackdownEngine()
 
 void SmackdownEngine::Start()
 {
-<<<<<<< HEAD
-	//while (v_Window.isOpen())
-	//{
-
-=======
 	while (v_Window.isOpen())
 	{
->>>>>>> b3fcc6f85479ef8841c6646da4fd47350eb8e2f6
 		v_Window.clear(Color::Black);
-		//if(input.esc())
-			//v_Window.close();
+		if(input.esc())
+			v_Window.close();
 
 		switch (GAME_STATE)
 		{
@@ -136,7 +130,7 @@ void SmackdownEngine::Start()
 		}
 
 		v_Window.display();
-	//}
+	}
 }
 
 void SmackdownEngine::InitializeGame() {

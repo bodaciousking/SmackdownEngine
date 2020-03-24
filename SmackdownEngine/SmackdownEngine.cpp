@@ -53,9 +53,6 @@ SmackdownEngine::SmackdownEngine()
 	v_Window.setMouseCursorVisible(false);
 
 	//SPLASH SCREEN STUFF
-	v_SplashTexture.loadFromFile("../Assets/Splash.jpg");
-	v_SplashSprite.setTexture(v_SplashTexture);
-
 	v_MenuTexture.loadFromFile("../Assets/Menu.jpg");
 	v_MenuSprite.setTexture(v_MenuTexture);
 
@@ -73,64 +70,7 @@ SmackdownEngine::SmackdownEngine()
 
 void SmackdownEngine::Start()
 {
-	while (v_Window.isOpen())
-	{
-		v_Window.clear(Color::Black);
-		if(input.esc())
-			v_Window.close();
 
-		switch (GAME_STATE)
-		{
-		case SPLASH:
-			scene = SPLASH;
-			v_Window.clear(Color::Black);
-			v_Window.draw(v_SplashSprite);
-
-			if (input.enter())
-				GAME_STATE = MENU;
-			break;
-
-		case MENU:
-			scene = MENU;
-			v_Window.clear(Color::Black);
-			v_Window.draw(v_MenuSprite);
-			if (input.enter())
-			{
-				GAME_STATE = GAME;
-				SmackdownEngine::InitializeGame();
-				sceneGraph.Start();
-			}
-			break;
-			//std::cout << "drawing";
-
-		case GAME:
-			scene = GAME;
-			v_Window.clear(Color::Black);
-			v_Window.draw(v_GameSprite);/*
-			if (v_Clock.getElapsedTime().asMilliseconds > 1000) {
-				v_Clock.restart();
-				sceneGraph.Update(v_Clock.getElapsedTime);
-			}*/
-
-
-			if (input.enter())
-				GAME_STATE = RESULTS;
-			break;
-
-		case RESULTS:
-			scene = RESULTS;
-			v_Window.clear(Color::Black);
-			v_Window.draw(v_ResultsSprite);
-			if (input.enter())
-				GAME_STATE = MENU;
-			break;
-
-		default:
-			break;
-		}
-
-		v_Window.display();
-	}
 }
 
 void SmackdownEngine::InitializeGame() {

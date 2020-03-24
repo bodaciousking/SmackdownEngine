@@ -1,12 +1,5 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  BaseComponent.cpp
-  GameObject.cpp
-  Initializer.cpp
-  Input.cpp
-  main.cpp
-  RenderComponent.cpp
-  SceneGraph.cpp
   SmackdownEngine.cpp
 d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(45): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
           with
@@ -23,12 +16,6 @@ d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine
           [
               T=float
           ]
-d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(151): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
-d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(143): warning C4101: 'sysInfo': unreferenced local variable
-  SceneManager.cpp
-  TransformComponent.cpp
-  Update.cpp
-  Generating Code...
-d:\school semester 5\game engine\smackdownengine\smackdownengine\input.cpp(12): warning C4715: 'Input::space': not all control paths return a value
-d:\school semester 5\game engine\smackdownengine\smackdownengine\input.cpp(139): warning C4715: 'Input::esc': not all control paths return a value
+d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(91): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
+d:\school semester 5\game engine\smackdownengine\smackdownengine\smackdownengine.cpp(83): warning C4101: 'sysInfo': unreferenced local variable
   SmackdownEngine.vcxproj -> D:\School Semester 5\Game Engine\SmackdownEngine\\Game\x64\Debug\SmackdownEngine.exe

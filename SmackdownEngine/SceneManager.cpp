@@ -3,6 +3,17 @@
 
 
 
+void SceneManager::addScene(int i, SCENE scene)
+{
+	scene = (SCENE)i;
+}
+
+SCENE SceneManager::getScene(int i)
+{
+
+	return (SCENE)i;
+}
+
 void changeScene(SCENE scene)
 {
 	

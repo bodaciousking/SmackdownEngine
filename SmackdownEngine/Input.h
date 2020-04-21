@@ -3,6 +3,7 @@
 class Input
 {
 public:
+	bool R();
 	bool A();
 	bool S();
 	bool D();

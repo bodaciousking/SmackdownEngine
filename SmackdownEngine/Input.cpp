@@ -8,7 +8,22 @@ bool Input::space()
 	{
 		return true;
 	}
+	else
+	{
+		return false;
+	}
 
+}
+bool Input::R()
+{
+	if (Keyboard::isKeyPressed(Keyboard::R))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 bool Input::A()
